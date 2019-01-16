@@ -8,6 +8,9 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('images');
+  this.route('fox-facts');
+  this.route('videos');
+  this.route('music');
 });
 
 export default Router;
