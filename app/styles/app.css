@@ -15,3 +15,11 @@ footer a {
   font-weight: 800;
   float: right;
 }
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: white !important;
+}
