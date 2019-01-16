@@ -14,7 +14,7 @@ Router.map(function() {
   this.route('blackbears');
   this.route('sealions');
   this.route('lemmings');
-  this.route('rams');
+  this.route('sheep');
 });
 
 export default Router;
