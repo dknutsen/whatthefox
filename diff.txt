@@ -1,0 +1,169 @@
+diff --git a/app/router.js b/app/router.js
+index 0330e40..d0bb009 100644
+--- a/app/router.js
++++ b/app/router.js
+@@ -7,10 +7,6 @@ const Router = EmberRouter.extend({
+ });
+ 
+ Router.map(function() {
+-  this.route('fox-facts');
+-  this.route('videos');
+-  this.route('music');
+-  this.route('photos');
+ });
+ 
+ export default Router;
+diff --git a/app/routes/fox-facts.js b/app/routes/fox-facts.js
+deleted file mode 100644
+index 6c74252..0000000
+--- a/app/routes/fox-facts.js
++++ /dev/null
+@@ -1,4 +0,0 @@
+-import Route from '@ember/routing/route';
+-
+-export default Route.extend({
+-});
+diff --git a/app/routes/music.js b/app/routes/music.js
+deleted file mode 100644
+index 6c74252..0000000
+--- a/app/routes/music.js
++++ /dev/null
+@@ -1,4 +0,0 @@
+-import Route from '@ember/routing/route';
+-
+-export default Route.extend({
+-});
+diff --git a/app/routes/photos.js b/app/routes/photos.js
+deleted file mode 100644
+index 6c74252..0000000
+--- a/app/routes/photos.js
++++ /dev/null
+@@ -1,4 +0,0 @@
+-import Route from '@ember/routing/route';
+-
+-export default Route.extend({
+-});
+diff --git a/app/routes/videos.js b/app/routes/videos.js
+deleted file mode 100644
+index 6c74252..0000000
+--- a/app/routes/videos.js
++++ /dev/null
+@@ -1,4 +0,0 @@
+-import Route from '@ember/routing/route';
+-
+-export default Route.extend({
+-});
+diff --git a/app/templates/fox-facts.hbs b/app/templates/fox-facts.hbs
+deleted file mode 100644
+index e2147ca..0000000
+--- a/app/templates/fox-facts.hbs
++++ /dev/null
+@@ -1 +0,0 @@
+-{{outlet}}
+\ No newline at end of file
+diff --git a/app/templates/music.hbs b/app/templates/music.hbs
+deleted file mode 100644
+index e2147ca..0000000
+--- a/app/templates/music.hbs
++++ /dev/null
+@@ -1 +0,0 @@
+-{{outlet}}
+\ No newline at end of file
+diff --git a/app/templates/photos.hbs b/app/templates/photos.hbs
+deleted file mode 100644
+index b810be7..0000000
+--- a/app/templates/photos.hbs
++++ /dev/null
+@@ -1,3 +0,0 @@
+-<img src="giphy.gif" />
+-<img src="image.png" />
+-<img src="image2.png" />
+\ No newline at end of file
+diff --git a/app/templates/videos.hbs b/app/templates/videos.hbs
+deleted file mode 100644
+index e2147ca..0000000
+--- a/app/templates/videos.hbs
++++ /dev/null
+@@ -1 +0,0 @@
+-{{outlet}}
+\ No newline at end of file
+diff --git a/public/images/giphy.gif b/public/images/giphy.gif
+deleted file mode 100644
+index 6ca25c6..0000000
+Binary files a/public/images/giphy.gif and /dev/null differ
+diff --git a/public/images/image.png b/public/images/image.png
+deleted file mode 100644
+index 1099127..0000000
+Binary files a/public/images/image.png and /dev/null differ
+diff --git a/public/images/image2.png b/public/images/image2.png
+deleted file mode 100644
+index ad495de..0000000
+Binary files a/public/images/image2.png and /dev/null differ
+diff --git a/tests/unit/routes/fox-facts-test.js b/tests/unit/routes/fox-facts-test.js
+deleted file mode 100644
+index 0ca328f..0000000
+--- a/tests/unit/routes/fox-facts-test.js
++++ /dev/null
+@@ -1,11 +0,0 @@
+-import { module, test } from 'qunit';
+-import { setupTest } from 'ember-qunit';
+-
+-module('Unit | Route | fox-facts', function(hooks) {
+-  setupTest(hooks);
+-
+-  test('it exists', function(assert) {
+-    let route = this.owner.lookup('route:fox-facts');
+-    assert.ok(route);
+-  });
+-});
+diff --git a/tests/unit/routes/music-test.js b/tests/unit/routes/music-test.js
+deleted file mode 100644
+index dbe321b..0000000
+--- a/tests/unit/routes/music-test.js
++++ /dev/null
+@@ -1,11 +0,0 @@
+-import { module, test } from 'qunit';
+-import { setupTest } from 'ember-qunit';
+-
+-module('Unit | Route | music', function(hooks) {
+-  setupTest(hooks);
+-
+-  test('it exists', function(assert) {
+-    let route = this.owner.lookup('route:music');
+-    assert.ok(route);
+-  });
+-});
+diff --git a/tests/unit/routes/photos-test.js b/tests/unit/routes/photos-test.js
+deleted file mode 100644
+index 7245e0d..0000000
+--- a/tests/unit/routes/photos-test.js
++++ /dev/null
+@@ -1,11 +0,0 @@
+-import { module, test } from 'qunit';
+-import { setupTest } from 'ember-qunit';
+-
+-module('Unit | Route | photos', function(hooks) {
+-  setupTest(hooks);
+-
+-  test('it exists', function(assert) {
+-    let route = this.owner.lookup('route:photos');
+-    assert.ok(route);
+-  });
+-});
+diff --git a/tests/unit/routes/videos-test.js b/tests/unit/routes/videos-test.js
+deleted file mode 100644
+index 11ab023..0000000
+--- a/tests/unit/routes/videos-test.js
++++ /dev/null
+@@ -1,11 +0,0 @@
+-import { module, test } from 'qunit';
+-import { setupTest } from 'ember-qunit';
+-
+-module('Unit | Route | videos', function(hooks) {
+-  setupTest(hooks);
+-
+-  test('it exists', function(assert) {
+-    let route = this.owner.lookup('route:videos');
+-    assert.ok(route);
+-  });
+-});
