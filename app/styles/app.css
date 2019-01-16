@@ -28,3 +28,8 @@ nav {
 nav a {
   color: white !important;
 }
+
+
+.page-text {
+  margin-top: 5rem;
+}
