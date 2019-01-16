@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('images');
-  this.route('fox-facts');
+  this.route('foxes');
   this.route('videos');
   this.route('music');
   this.route('bears');
