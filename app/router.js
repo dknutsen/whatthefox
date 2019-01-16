@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('foxes');
   this.route('videos');
   this.route('music');
-  this.route('bears');
+  this.route('blackbears');
   this.route('sealions');
   this.route('lemmings');
   this.route('rams');
