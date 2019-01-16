@@ -11,6 +11,10 @@ Router.map(function() {
   this.route('fox-facts');
   this.route('videos');
   this.route('music');
+  this.route('bears');
+  this.route('sealions');
+  this.route('lemmings');
+  this.route('rams');
 });
 
 export default Router;
